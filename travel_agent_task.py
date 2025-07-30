@@ -1,5 +1,5 @@
-from dotenv import load_dotenv
-load_dotenv()
+import streamlit as st
+api_key = st.secrets["OPENAI_API_KEY"]
 
 # from langchain_ollama.llms import OllamaLLM
 from crewai import Agent, Task, Crew, Process

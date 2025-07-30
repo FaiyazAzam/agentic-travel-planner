@@ -5,10 +5,9 @@ from langchain_community.tools import DuckDuckGoSearchResults
 from langchain.vectorstores import FAISS
 from langchain.embeddings import HuggingFaceEmbeddings
 
-from dotenv import load_dotenv
-import os
 
-load_dotenv()  # loads variables from .env
+import streamlit as st
+
 
 # Load FAISS index from local folder
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -49,7 +48,7 @@ def weather_update_tool(city: str):
     """
     Returns real-time weather info for a city using OpenWeatherMap API.
     """
-    api_key = os.getenv("OPENWEATHERMAP_API_KEY")  # Replace with your OpenWeatherMap API key
+    api_key = st.secrets["OPENWEATHERMAP_API_KEY"]  # Replace with your OpenWeatherMap API key
     encoded_city = urllib.parse.quote(city)
     endpoint = f"http://api.openweathermap.org/data/2.5/weather?q={encoded_city}&appid={api_key}&units=metric"
 
