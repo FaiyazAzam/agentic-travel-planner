@@ -1,6 +1,7 @@
 streamlit
 crewai[tools]
 crewai==0.13.2
+chromadb==0.4.14
 langchain
 langchain_ollama
 langchain_community
