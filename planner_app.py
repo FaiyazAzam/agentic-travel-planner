@@ -1,3 +1,8 @@
+import sys
+import pysqlite3 as sqlite3
+sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
+
+
 import streamlit as st
 from datetime import date
 from travel_agent_task import guide_expert, location_expert, planner_expert
@@ -5,9 +10,6 @@ from travel_agent_task import location_task, guide_task, planner_task
 from travel_plan_utils import retrieve_relevant_docs_fn
 from crewai import Crew, Process
 
-import sys
-import pysqlite3 as sqlite3
-sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 
 # ------------------------ Streamlit Page Config ------------------------
 st.set_page_config(page_title="AI Trip Planner", page_icon="🌍", layout="centered")
