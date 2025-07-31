@@ -27,3 +27,8 @@ Agentic_AI/
 ├── planner_app.py # Streamlit UI runner
 ├── requirements.txt # Python dependencies
 └── README.md # You’re here!
+
+## 🌐 Live App
+
+You can try the live version here:  
+👉 [Agentic Travel Planner on Streamlit](https://agentic-travel-planner-fazam.streamlit.app)
