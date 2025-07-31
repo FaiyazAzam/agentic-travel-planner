@@ -8,4 +8,5 @@ crewai_tools
 duckduckgo-search
 python-dotenv
 pysqlite3-binary
+sentence-transformers
 
