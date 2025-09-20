@@ -4,6 +4,7 @@ crewai
 langchain
 langchain_ollama
 langchain_community
+lagchain_openai
 crewai_tools
 duckduckgo-search
 python-dotenv
