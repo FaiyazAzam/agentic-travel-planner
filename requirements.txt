@@ -7,6 +7,7 @@ langchain-community
 langchain-openai
 langchain-huggingface
 crewai_tools
+ddgs
 duckduckgo-search
 python-dotenv
 pysqlite3-binary
