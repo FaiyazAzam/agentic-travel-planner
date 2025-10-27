@@ -1,12 +1,12 @@
-import streamlit as st
-api_key = st.secrets["OPENAI_API_KEY"]
+from dotenv import load_dotenv
+load_dotenv()
 
 # from langchain_ollama.llms import OllamaLLM
 from crewai import Agent, Task, Crew, Process
 from langchain_openai import ChatOpenAI
 from travel_plan_utils import weather_update_tool, wikidata_tool, overpass_poi_tool 
 from travel_plan_utils import retrieve_relevant_docs, retrieve_relevant_docs_fn, web_search_tool
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader
 
