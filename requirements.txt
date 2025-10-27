@@ -5,6 +5,7 @@ langchain
 langchain_ollama
 langchain-community
 langchain-openai
+langchain-huggingface
 crewai_tools
 duckduckgo-search
 python-dotenv

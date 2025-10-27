@@ -3,7 +3,7 @@ import requests
 import urllib.parse
 from langchain_community.tools import DuckDuckGoSearchResults
 from langchain_community.vectorstores import FAISS
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 from dotenv import load_dotenv
 import os
